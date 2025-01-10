@@ -36,7 +36,7 @@ const Hero = () => {
             <input ref={titleRef}
               type="text"
               placeholder="Search for jobs"
-              className="max-sm:text-xs p-2 rounded outline-none w-full border-black border-b"
+              className="max-sm:text-xs p-2 rounded outline-none w-full hover:border-green-700 focus:border-green-600 border-b focus:border-b-2 transition-all duration-500"
             />
           </div>
           <div className="flex items-center">
@@ -48,24 +48,24 @@ const Hero = () => {
             <input ref={locationRef}
               type="text"
               placeholder="Location"
-              className="max-sm:text-xs p-2 rounded outline-none w-full border-black border-b"
+              className="max-sm:text-xs p-2 rounded outline-none w-full hover:border-green-700 focus:border-green-600 focus:border-b-2 border-b transition-all duration-500"
             />
           </div>
-          <button onClick={onSearch} className="bg-green-700 px-6 py-2 rounded text-white m-1 hover:bg-green-800">
+          <button onClick={onSearch} className="bg-green-700 px-6 py-2 rounded text-white m-1 hover:bg-green-800 transition-all duration-500">
             Search
           </button>
         </div>
       </div>
 
-      <div className="border border-gray-300 shadow-md mx-2 mt-5 p-6 rounded-md flex">
-        <div className="flex justify-center gap-10 lg:gap-16 flex-wrap">
+      <div className="bg-green-200 border border-gray-300 shadow-md mx-2 mt-5 px-2 py-8 rounded-md flex">
+        <div className="flex justify-center gap-8 lg:gap-12 flex-wrap">
           <p className="font-medium">Trusted by</p>
-          <img className="h-4" src={assets.amazon_logo} alt="" />
-          <img className="h-4" src={assets.samsung_logo} alt="" />
-          <img className="h-4" src={assets.microsoft_logo} alt="" />
-          <img className="h-4" src={assets.adobe_logo} alt="" />
-          <img className="h-4" src={assets.accenture_logo} alt="" />
-          <img className="h-4" src={assets.walmart_logo} alt="" />
+          <img className="h-5" src={assets.amazon_logo} alt="" />
+          <img className="h-5" src={assets.samsung_logo} alt="" />
+          <img className="h-5" src={assets.microsoft_logo} alt="" />
+          <img className="h-5" src={assets.adobe_logo} alt="" />
+          <img className="h-5" src={assets.accenture_logo} alt="" />
+          <img className="h-5" src={assets.walmart_logo} alt="" />
         </div>
       </div>
     </div>

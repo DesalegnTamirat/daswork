@@ -11,28 +11,28 @@ const Navbar = () => {
     <div className="shadow py-3 bg-white">
       <div className="container px-4 2xl:px-20 mx-auto flex justify-between items-center">
         {/* Logo */}
-        <img src={assets.logo} className="w-36 h-10 -translate-x-5" alt="Daswork Logo" />
+        <img src={assets.logo} className="w-36 h-10 -translate-x-5 animate-smoothBounce" alt="Daswork Logo" />
         
         {/* User Section */}
         {user ? (
           <div className="flex items-center gap-6">
             <Link
               to={"/application"}
-              className="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-5 rounded-full transition-colors"
+              className="bg-lime-900 hover:bg-lime-800 text-white font-bold py-1 px-5 rounded-full transition-all duration-500 max-sm:text-xs"
             >
               Applied Jobs
             </Link>
             <div className="flex items-center gap-2">
-              <p className="text-black/70 text-lg">
+              <p className="text-black/70 text-lg max-sm:hidden">
                 {user.firstName + " " + user.lastName[0]}
               </p>
-              <div className="px-1 py-1 rounded-full bg-green-800 flex items-center cursor-pointer">
+              <div className="p-1 rounded-full bg-green-800 flex items-center cursor-pointer max-sm:p-0.5">
                 <UserButton
                   appearance={{
                     elements: {
                       userButtonAvatarBox: {
-                        width: "40px",
-                        height: "40px",
+                        width: "35px",
+                        height: "35px",
                         borderRadius: "50%",
                       },
                     },
@@ -44,12 +44,12 @@ const Navbar = () => {
         ) : (
           // Guest Section
           <div className="flex gap-4 max-sm:text-xs">
-            <button className="text-gray-600 hover:text-gray-800 transition-colors">
+            <button className="text-gray-600 hover:text-gray-800 transition-all duration-500">
               Recruiter Login
             </button>
             <button
               onClick={openSignIn}
-              className="bg-green-700 hover:bg-green-800 text-white px-5 py-1.5 rounded-xl transition-colors"
+              className="bg-green-700 hover:bg-green-800 text-white px-5 py-1.5 rounded-xl transition-all duration-500"
             >
               Login
             </button>
