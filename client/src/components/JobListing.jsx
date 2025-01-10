@@ -100,7 +100,7 @@ const JobListing = () => {
           {
             Array.from({ length: Math.ceil(jobs.length/6) }).map((_, index) => (
               <a key={index} href="#job-list" >
-                <button onClick={() => setCurrentPage(index + 1)} className={`w-10 h-10 flex items-center justify-center border border-gray-300 rounded ${currentPage === index + 1 ? 'bg-green-100 text-green-500': 'text-gray-500'}`}>{index + 1}</button>
+                <button onClick={() => setCurrentPage(index + 1)} className={`w-10 h-10 flex items-center justify-center border border-gray-300 rounded transition-all duration-300 ${currentPage === index + 1 ? 'bg-green-300/90 text-green-960': 'text-gray-600 hover:bg-green-200/60 hover:text-gray-800'}`}>{index + 1}</button>
               </a>
             ))
           }

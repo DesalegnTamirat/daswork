@@ -57,15 +57,15 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="bg-green-200 border border-gray-300 shadow-md mx-2 mt-5 px-2 py-8 rounded-md flex">
+      <div className="bg-green-200 border border-gray-300 shadow-md mx-2 mt-5 px-8 py-6 rounded-md flex">
         <div className="flex justify-center gap-8 lg:gap-12 flex-wrap">
           <p className="font-medium">Trusted by</p>
-          <img className="h-5" src={assets.amazon_logo} alt="" />
-          <img className="h-5" src={assets.samsung_logo} alt="" />
-          <img className="h-5" src={assets.microsoft_logo} alt="" />
-          <img className="h-5" src={assets.adobe_logo} alt="" />
-          <img className="h-5" src={assets.accenture_logo} alt="" />
-          <img className="h-5" src={assets.walmart_logo} alt="" />
+          <img className="h-7" src={assets.amazon_logo} alt="" />
+          <img className="h-7" src={assets.samsung_logo} alt="" />
+          <img className="h-7" src={assets.microsoft_logo} alt="" />
+          <img className="h-7" src={assets.adobe_logo} alt="" />
+          <img className="h-7" src={assets.accenture_logo} alt="" />
+          <img className="h-7" src={assets.walmart_logo} alt="" />
         </div>
       </div>
     </div>
